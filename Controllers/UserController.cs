@@ -29,13 +29,13 @@ namespace exam.Controllers
             return Ok(await _UserService.GetAllUser());
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetUserById")]
         public async Task<ActionResult<ServiceResponse<GetUserDto>>> GetSingle(int id)
         {
             return Ok(await _UserService.GetUserById(id));
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteUserById")]
         public async Task<ActionResult<ServiceResponse<List<GetUserDto>>>> Delete(int id)
         {
             var response = await _UserService.DeleteUser(id);
@@ -46,13 +46,13 @@ namespace exam.Controllers
             return Ok(response);
         }
 
-        [HttpPost]
+        [HttpPost("PostUser")]
         public async Task<ActionResult<ServiceResponse<List<GetUserDto>>>> AddUser(AddUserDto newUser)
         {
             return Ok(await _UserService.AddUser(newUser));
         }
 
-        [HttpPut]
+        [HttpPut("PutUser")]
         public async Task<ActionResult<ServiceResponse<GetUserDto>>> UpdateUser(UpdateUserDto updateUser)
         {
             var response = await _UserService.UpdateUser(updateUser);
