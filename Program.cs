@@ -1,5 +1,5 @@
-global using rpg_true.Models;
-using rpg_true.Services.CharacterService;
+global using exam.Models;
+using exam.Services.UserService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
-builder.Services.AddScoped<ICharacterService, CharacterService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

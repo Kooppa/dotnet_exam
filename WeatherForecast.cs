@@ -1,4 +1,4 @@
-namespace rpg_true;
+namespace exam;
 
 public class WeatherForecast
 {

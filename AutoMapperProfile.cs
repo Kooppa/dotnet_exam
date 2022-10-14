@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using rpg_true.Dtos.Character;
+using exam.Dtos.User;
 
-namespace rpg_true
+namespace exam
 {
     public class AutoMapperProfile : Profile
     {
         public AutoMapperProfile()
         {
-            CreateMap<Character, GetCharacterDto>(); 
-            CreateMap<AddCharacterDto, Character>(); 
-            CreateMap<UpdateCharacterDto, Character>();
+            CreateMap<User, GetUserDto>(); 
+            CreateMap<AddUserDto, User>(); 
+            CreateMap<UpdateUserDto, User>();
         }
     }
 }

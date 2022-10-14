@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "rpg_true": {
+    "exam": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace rpg_true.Models
+namespace exam.Models
 {
     public class ServiceResponse<T>
     {

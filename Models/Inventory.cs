@@ -1,14 +1,14 @@
 using System.Text.Json.Serialization;
 
-namespace rpg_true.Models
+namespace exam.Models
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
-    public enum RpgClass
+    public enum Inventory
     {
-        Knight = 1,
+        Admin = 1,
 
-        Mage = 2,
+        Customer = 2,
 
-        Cleric = 3
+        Seller = 3
     }
 }
